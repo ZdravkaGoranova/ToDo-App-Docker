@@ -23,6 +23,7 @@ jobs:
         with:
         #   context: ././frontend
         #   file: ././frontend/Dockerfile
+          context: .
           push: true
           tags: zdrgoranova/frontend:latest
 
@@ -43,5 +44,6 @@ jobs:
         with:            
         #   context: ././backend
         #   file: ././backend/Dockerfile
+          context: .
           push: true
           tags: zdrgoranova/backend:latest         
