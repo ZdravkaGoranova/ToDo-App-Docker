@@ -21,8 +21,8 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
-          context: /frontend
-          file: /frontend/Dockerfile
+          context: ../frontend
+          file: ../frontend/Dockerfile
           push: true
           tags: zdrgoranova/frontend:latest
 
@@ -41,7 +41,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v2
         with:            
-          context: /backend
-          file: /backend/Dockerfile
+          context: ././backend
+          file: ././backend/Dockerfile
           push: true
           tags: zdrgoranova/backend:latest         
